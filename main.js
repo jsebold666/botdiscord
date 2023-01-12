@@ -22,29 +22,20 @@ client.on("ready", () => {
 });
 
 client.on('message', (message) => {
-    const channel = client.channels.cache.get("1045023886837821492");
+    const channel = client.channels.cache.get("id do channel");
 
     if(message.content ==='/estasOn'){
         message.reply('Sim mestre!')
     }
-    if(message.content ==='/flavio'){
+    if(message.content ==='/sound'){
 
-            message.reply('Aiii flavinhooooo')
             channel.join().then(r => {
-                r.play('./flavio.mp3');
+                r.play('./filemp3.mp3');
             }).catch(e => {
                 console.log(e)
             })        
     }
-    if(message.content ==='/mallmann'){
 
-        message.reply('Aiii flavinhooooo')
-        channel.join().then(r => {
-            r.play('./mallmann.mp3');
-        }).catch(e => {
-            console.log(e)
-        })        
-    }
 
     
     // if (message.content.substring(0, 1) === config.prefix) {
