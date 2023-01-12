@@ -8,7 +8,7 @@ client.on('ready', () => {
 });
 
 client.on("ready", () => {
-    const channel = client.channels.cache.get("1045023886837821492");
+    const channel = client.channels.cache.get("id channel");
     
     if (!channel) return console.error("The channel does not exist!");
     channel.join().then(connection => {
